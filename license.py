@@ -11,14 +11,14 @@ LICENSES = [
     {
         # كود 1234
         "key": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4", 
-        "name": "Ali Khalaf (1234)",
+        "name": "  جنرال",
         "expires": "2026-05-20T23:59:59", 
         "limit": 5
     },
     {
         # كود 0000 (تم تعديل الهاش للهاش الحقيقي الذي أرسلته)
         "key": "9af15b336e6a9619928537df30b2e6a2376569fcf9d7e773eccede65606529a0", 
-        "name": "User (0000)",
+        "name": "جنرال (0000)",
         "expires": "2026-02-24T23:59:59", 
         "limit": 10000
     },
@@ -78,5 +78,6 @@ def check_license():
         }), 200
     
     return jsonify({"status": "fail", "reason": "invalid"}), 403
+
 if __name__ == "__main__":
-app.run(host="0.0.0.0", port=5000)
+    app.run(host="0.0.0.0", port=5000)
