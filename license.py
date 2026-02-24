@@ -37,10 +37,6 @@ def get_hwid_file():
             with open(DB_FILE, "r") as f: return json.load(f)
         except: return {}
     return {}
-@app.route("/health", methods=["GET"])
-def health_check():
-    return jsonify({"status": "healthy", "time": str(datetime.datetime.now())})
-    
 @app.route("/check", methods=["POST"])
 def check_license():
     data = request.get_json()
